@@ -1,9 +1,10 @@
 <html>
 <head>
-	<title>My first form</title>
+	<title>Form version 3.6.2, or something like that</title>
 </head>
 <body>
-	<form method="POST" action="http://requestb.in/tvoqovtv">
+	<h2>User Login</h2>
+	<form method="POST" action="http://requestb.in/qg0o6rqg">
     <p>
         <label for="username">Username</label>
         <input id="username" name="username" type="text" placeholder="Enter your name">
@@ -13,8 +14,106 @@
         <input id="password" name="password" type="password" placeholder="Enter your password">
     </p>
     <p>
-        <button name="submit" type="submit" value="Login">Login</button>
+        <button name="submit" type="submit">Login</button>
     </p>
+
+</form>
+<hr>
+<h2>Compose an E-mail</h2>
+<form method="POST" action="http://requestb.in/qg0o6rqg">
+	<p>
+		<label for="emailto">To</label>
+		<input id="emailto" name="emailto" type="text" placeholder="Recipient's address">
+	</p>
+	<p>
+		<label for="emailfrom">From</label>
+		<input id="emailfrom" name="emailfrom" type="text" placeholder="Your address">
+	</p>
+	<p>
+		<label for="subject">Subject</label>
+		<input id="subject" name="subject" type="text" placeholder="Message subject">
+    <p>
+    	<textarea id="comment_body" name="comment_body" rows="5" cols="40" placeholder="Compose message here"></textarea>
+    </p>
+	<p>
+		<label for="mailing_list">
+			Copy message to your sent mail folder?
+			<input type="checkbox" id="mailing_list" name="mailing_list" value="yes" checked>
+		</label>
+	</p>
+    <p>
+        <button name="submit" type="submit">Send</button>
+    </p>
+</form>
+<hr>
+<form method="POST" action="http://requestb.in/qg0o6rqg">
+	<h2>Multiple Choice Test!</h2>
+	<p>
+	<p>I am a very pretentious goat. My coat is brown and black. Which of the following colors best describes me?</p>
+		<label>
+		    <input type="radio" id="q1a" name="q1" value="cerise">
+		    Cerise
+		</label>
+		<label>
+		    <input type="radio" id="q1b" name="q1" value="aubergine">
+		    Aubergine
+		</label>
+		<label>
+		    <input type="radio" id="q1c" name="q1" value="chamoisee">
+		    Chamoisee
+		</label>
+		<label>
+		    <input type="radio" id="q1d" name="q1" value="umber">
+		    Umber
+		</label>
+	<p>Which of the following words is NOT spelled correctly?</p>
+		<label>
+		    <input type="radio" id="q1a" name="q2" value="cerise">
+		    Disparate
+		</label>
+		<label>
+		    <input type="radio" id="q1b" name="q2" value="aubergine">
+		    Bellwether
+		</label>
+		<label>
+		    <input type="radio" id="q1c" name="q2" value="chamoisee">
+		    Misspell
+		</label>
+		<label>
+		    <input type="radio" id="q1d" name="q2" value="umber">
+		    Innoculate
+		</label>
+	<p>
+		<label for="pudding">Which of the following is a delicious pudding? Select all that apply.</label>
+	</p>
+		<select id for="pudding" name="pudding[]" multiple>
+			<option value="kheer">Kheer</option>
+			<option value="anchovies">Bagna cauda</option>
+			<option value="dick">Spotted dick</option>
+			<option value="blancmange">Blancmange</option>
+		</select>
+	<p>Go Nuts, Check Numerous Boxes!</p>
+		<label><input type="checkbox" id="box1" name="box[]" value="this"> This Box!</label>
+		<label><input type="checkbox" id="box2" name="box[]" value="that"> That Box!</label>
+		<label><input type="checkbox" id="box3" name="box[]" value="super"> Super Ultra Amazing Box!</label>
+		<label><input type="checkbox" id="box3" name="box[]" value="mystery"> Mystery Box!</label>
+		<label><input type="checkbox" id="box3" name="box[]" value="foxbox"> Box With Fox Box!</label>
+		<label><input type="checkbox" id="box3" name="box[]" value="boxboxbox"> Box Box Box!</label>
+	<p>
+		<button name="answersubmit" type="submit">Submit answers!</button>
+	</p>
+</form>
+	<hr>
+	<h2>Select Testing</h2>
+<form method="POST" action="http://requestb.in/qg0o6rqg">
+	<label for="pudding">Do you like mango pudding?</label>
+	<select id="pudding" name="pudding">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
+	<p>
+		<button name="puddingsubmit" type="submit">Submit</button>
+	</p>
 </form>
 </body>
 </html>
