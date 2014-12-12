@@ -25,7 +25,7 @@ sayHello(myNameIs);
 var random = Math.floor((Math.random()*100)+1);
 
 function isOdd(num) {
-	var parity = (num% 2 == 0) ? num + ' is even!' : num + ' is odd!';
+	var parity = (num % 2 == 0) ? num + ' is even!' : num + ' is odd!';
 	return parity;
 }
 
